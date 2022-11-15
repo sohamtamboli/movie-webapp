@@ -1,0 +1,11 @@
+@use "../_variables.module.scss" as v;
+@use "../_utilities.module.scss" as m;
+
+.sidebar__container {
+	@include m.flexbox(column, 3rem);
+}
+
+.logo {
+	@include m.norm;
+	color: v.$text-color-white;
+}

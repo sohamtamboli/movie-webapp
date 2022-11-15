@@ -1,9 +1,11 @@
 import { Roboto } from "@next/font/google";
+import Sidebar from "../components/sidebar/Sidebar";
 import "../styles/globals.scss";
 import styles from "../styles/layout.module.scss";
 
 const roboto = Roboto({
 	weight: ["400", "500", "700"],
+	subsets: ["latin"],
 });
 
 export default function RootLayout({
@@ -19,11 +21,14 @@ export default function RootLayout({
       */}
 			<head />
 			<body className={styles.mainFlexLayout}>
-				<div className={styles.leftSidebar}>{/* sidebar */}left side</div>
-				<div className={styles.rightContent}>
+				<aside className={styles.leftSidebar}>
+					<Sidebar />
+				</aside>
+				<section className={styles.rightContent}>
+					{/* Horizontal Navbar */}
 					{/* main content */}
-					{children}
-				</div>
+					<main>{children}</main>
+				</section>
 			</body>
 		</html>
 	);

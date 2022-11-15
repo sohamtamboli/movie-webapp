@@ -1,0 +1,13 @@
+@mixin flexbox($direction, $gap) {
+	display: flex;
+	flex-direction: $direction;
+	gap: $gap;
+}
+
+@mixin globalNavigationSectionPadding {
+	padding: 3.5rem 2.5rem;
+}
+
+@mixin norm {
+	background-color: rgb(144, 0, 255);
+}

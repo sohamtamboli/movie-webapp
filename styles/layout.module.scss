@@ -1,3 +1,6 @@
+@use "../styles/_utilities.module.scss" as m;
+@use "../styles/_variables.module.scss" as v;
+
 .mainFlexLayout {
 	display: flex;
 	height: 100vh;
@@ -7,9 +10,11 @@
 .leftSidebar {
 	flex: 0.15;
 	border-right: 1px solid rgba(211, 211, 211, 0.118);
-	padding: 3rem 2rem;
+	@include m.globalNavigationSectionPadding;
 }
 
 .rightContent {
 	flex: 0.85;
+	@include m.globalNavigationSectionPadding;
+	color: v.$text-color-white;
 }

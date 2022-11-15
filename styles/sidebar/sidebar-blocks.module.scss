@@ -1,0 +1,23 @@
+@use "../_variables.module.scss" as v;
+@use "../_utilities.module.scss" as m;
+
+.sidebar__block__container {
+	@include m.flexbox(column, 2rem);
+}
+
+.sidebar__block__title {
+	color: v.$sidebar-list-color;
+	font-size: 14px;
+}
+.sidebar__block__menu__link {
+	text-decoration: none;
+}
+.sidebar__block__menu__item {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 2rem;
+	cursor: pointer;
+	font-size: 20px;
+	color: v.$sidebar-list-color;
+}
