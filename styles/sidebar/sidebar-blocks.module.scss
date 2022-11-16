@@ -21,3 +21,6 @@
 	font-size: 20px;
 	color: v.$sidebar-list-color;
 }
+.sidebar__block__active__link {
+	color: v.$active-link-color;
+}

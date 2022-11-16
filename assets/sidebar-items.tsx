@@ -14,22 +14,22 @@ export const sidebarItems = [
 			{
 				route: HOME,
 				sidebarItemName: "Browse",
-				sidebarItemIcon: HiOutlineSquares2X2,
+				sidebarItemIcon: <HiOutlineSquares2X2 />,
 			},
 			{
 				route: WATCHLIST,
 				sidebarItemName: "Watchlist",
-				sidebarItemIcon: AiOutlineHeart,
+				sidebarItemIcon: <AiOutlineHeart />,
 			},
 			{
 				route: UPCOMING,
 				sidebarItemName: "Upcoming",
-				sidebarItemIcon: BsCalendar4Event,
+				sidebarItemIcon: <BsCalendar4Event />,
 			},
 			{
 				route: TRENDING,
 				sidebarItemName: "Trending",
-				sidebarItemIcon: BiTrendingUp,
+				sidebarItemIcon: <BiTrendingUp />,
 			},
 		],
 	},
@@ -39,12 +39,12 @@ export const sidebarItems = [
 			{
 				route: TVSHOWS,
 				sidebarItemName: "TV Shows",
-				sidebarItemIcon: FiMonitor,
+				sidebarItemIcon: <FiMonitor />,
 			},
 			{
 				route: MOVIES,
 				sidebarItemName: "Movies",
-				sidebarItemIcon: BiMoviePlay,
+				sidebarItemIcon: <BiMoviePlay />,
 			},
 		],
 	},
@@ -54,7 +54,7 @@ export const sidebarItems = [
 			{
 				route: SETTINGS,
 				sidebarItemName: "Settings",
-				sidebarItemIcon: FiSettings,
+				sidebarItemIcon: <FiSettings />,
 			},
 		],
 	},
